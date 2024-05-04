@@ -1,4 +1,7 @@
-.body {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -10,7 +13,13 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding-bottom: 60px;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #F9FAF8;
 }
 
 ul {
@@ -28,10 +37,14 @@ a {
     font-size: 18px;
 }
 
+/* header is complete */
+
 .section1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 70px;
+    padding-bottom: 80px;
 }
 
 .hero-text {
@@ -40,18 +53,26 @@ a {
     color: #F9FAF8;
 }
 
-.combo1 {
+.combo-box {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    width: 350px;
-    padding: 20px;
+    align-items: flex-start;
+    width: 410px;
 }
 
-.combo1 button {
+.combo-box button {
     border: none;
-    width: 60px;
-    padding: 5px;
+    padding: 5px 20px;
+    margin-top: 5px;
+}
+
+.img-placeholder {
+    background-color: grey;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button {
@@ -59,21 +80,30 @@ button {
     border-radius: 5px;
 }
 
+/* section 1 is done. I achieved alignment of the header and the section 1 elements in a way
+that makes sense when the site is viewed in half screen mode. I'm sure there is a better way
+that keeps them always aligned such as setting the section 1 to justify-content to match the
+headers but for some reason they're not aligning with this strategy. */
+
 .section2 {
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-.subtitle {
+.information-header {
     text-align: center;
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    padding: 30px 0;
 }
 
 .boxes {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 200px;
 }
 
 .card {
@@ -88,7 +118,7 @@ button {
     text-align: center;
 }
 
-.section2 img {
+.illustration-box {
     border: 5px solid #3882F6;
     border-radius: 5px;
     width: 200px;
